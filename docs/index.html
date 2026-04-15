@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Las Catrinas Mexican Kitchen — Authentic Mexican cuisine in Lusby, MD. Experience the best tacos, burritos, and traditional Mexican dishes. Open Mon–Sat 11am–9pm, Sun 12pm–9pm." />
+  <meta name="keywords" content="Mexican restaurant, Lusby MD, authentic Mexican food, tacos, burritos, Las Catrinas, Mexican kitchen, Calvert County" />
+  <meta name="author" content="Las Catrinas Mexican Kitchen" />
+  <meta property="og:title" content="Las Catrinas Mexican Kitchen | Lusby, MD" />
+  <meta property="og:description" content="Authentic Mexican cuisine in Lusby, MD. Delicious food, great drinks, and warm hospitality." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://lascatrinasmexicankitchen.com" />
+  <meta name="theme-color" content="#1a0a00" />
+  <link rel="icon" type="image/jpg" href="assets/img/LasCatrinasKitchenLOGO.png" />
+  <title>Las Catrinas Mexican Kitchen | Lusby, MD</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script src="https://menutech.xyz/menutechUI.min.js"></script>
+  <script src="https://menutech.io/menutechUI.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="skulls-bg" aria-hidden="true">
+    <span class="skull s1">💀</span>
+    <span class="skull s2">🌸</span>
+    <span class="skull s3">💀</span>
+    <span class="skull s4">🌹</span>
+    <span class="skull s5">💀</span>
+    <span class="skull s6">🌺</span>
+    <span class="skull s7">💀</span>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/img/LasCatrinasKitchenLOGO.png" alt="Las Catrinas Logo" class="logo-img" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Restaurant</a></li>
+        <li><a href="#videos-link" class="nav-link">Videos</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="https://www.lascatrinasmexicankitchen.com/ordering/?facebook=true&restaurant_uid=f0807059-ac44-4520-b3c5-4da7660bfafb&company_uid=f799474e-5323-48fb-95d4-d5bfd86ffd8e" target="_blank" class="btn-order nav-order">Order Online</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/img/videoHeroSection.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="assets/img/LasCatrinasKitchenLOGO.png" alt="Las Catrinas Logo" class="hero-logo" />
+      </div>
+      <div class="hero-badge">✦ Authentic Mexican Cuisine ✦</div>
+      <h1 class="hero-title">
+        <span class="line1">Las Catrinas</span>
+        <span class="line2">Mexican Kitchen</span>
+      </h1>
+      <p class="hero-sub">Flavor. Culture. Tradition.</p>
+      <div class="hero-divider"><span>❧</span></div>
+      <div class="hero-cta">
+        <a href="https://www.lascatrinasmexicankitchen.com/ordering/?facebook=true&restaurant_uid=f0807059-ac44-4520-b3c5-4da7660bfafb&company_uid=f799474e-5323-48fb-95d4-d5bfd86ffd8e" target="_blank" class="btn-order btn-hero-primary">Order Online</a>
+        <a href="#menu" class="btn-hero-secondary">Explore Menu</a>
+      </div>
+      <div class="hero-hours">
+        <span>🕐 Mon–Sat: 11am – 9pm</span>
+        <span class="divider-dot">·</span>
+        <span>Sun: 12pm – 9pm</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-indicator"><span></span></div>
+    </div>
+
+    <div class="hero-catrina-deco" aria-hidden="true">
+      <svg viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="catrina-svg">
+        <ellipse cx="60" cy="65" rx="42" ry="50" fill="white" opacity="0.08"/>
+        <ellipse cx="44" cy="58" rx="12" ry="14" fill="white" opacity="0.15"/>
+        <ellipse cx="76" cy="58" rx="12" ry="14" fill="white" opacity="0.15"/>
+        <ellipse cx="60" cy="85" rx="8" ry="5" fill="white" opacity="0.1"/>
+        <path d="M48 98 Q60 108 72 98" stroke="white" stroke-width="2" opacity="0.2" fill="none"/>
+        <circle cx="20" cy="30" r="8" fill="#c0392b" opacity="0.4"/>
+        <circle cx="100" cy="30" r="8" fill="#c0392b" opacity="0.4"/>
+        <circle cx="10" cy="50" r="5" fill="#e67e22" opacity="0.3"/>
+        <circle cx="110" cy="50" r="5" fill="#e67e22" opacity="0.3"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-ornament top" aria-hidden="true">❦</div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal-left">
+          <div class="about-img-frame">
+            <img src="assets/img/letrerorestauranteporfuera.jpg" alt="Las Catrinas Mexican Kitchen exterior" class="about-img" />
+            <div class="img-border-deco"></div>
+          </div>
+          <div class="about-badge-card">
+            <span class="badge-icon">🌮</span>
+            <span class="badge-text">Authentic Flavors</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">A Taste of Mexico<br/><em>in Lusby, MD</em></h2>
+          <div class="title-underline"></div>
+          <p class="about-text">
+            At <strong>Las Catrinas Mexican Kitchen</strong> we offer meals of excellent quality and invite you to try our delicious food. The key to our success is simple: providing quality consistent food that tastes great every single time.
+          </p>
+          <p class="about-text">
+            We pride ourselves on serving our customers delicious genuine dishes. Eat delicious food. Grab a drink. But most of all, <em>relax!</em> We thank you from the bottom of our hearts for your continued support.
+          </p>
+          <a href="https://www.lascatrinasmexicankitchen.com/ordering/?facebook=true&restaurant_uid=f0807059-ac44-4520-b3c5-4da7660bfafb&company_uid=f799474e-5323-48fb-95d4-d5bfd86ffd8e" target="_blank" class="btn-order">Order Online</a>
+        </div>
+      </div>
+    </div>
+    <div class="section-ornament bottom" aria-hidden="true">❦</div>
+  </section>
+
+  <section class="promo-banner">
+  <div class="promo-content">
+
+    <div class="promo-img-wrapper">
+      <img src="assets/img/promotiondish.jpg" alt="Promotion dish" class="promo-img" id="promoOpen" />
+    </div>
+
+    <div class="promo-text">
+      <span class="promo-tag">Today's Special</span>
+      <h3>Don't Miss Our<br/>Special Dishes</h3>
+
+      <a href="https://www.lascatrinasmexicankitchen.com/ordering/?facebook=true&restaurant_uid=f0807059-ac44-4520-b3c5-4da7660bfafb&company_uid=f799474e-5323-48fb-95d4-d5bfd86ffd8e"
+         target="_blank"
+         class="btn-order">
+         Order Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="promo-modal" id="promoModal">
+  <span class="close-modal" id="closePromo">×</span>
+  <img src="assets/img/promotiondish.jpg" alt="Expanded Dish" class="modal-img">
+</div>
+
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <span class="section-tag">Our Dishes</span>
+      <h2 class="section-title text-center">Flavors That<br/><em>Tell a Story</em></h2>
+      <div class="title-underline center"></div>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous">❮</button>
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="carousel-track">
+            </div>
+        </div>
+        <button class="carousel-btn next" id="carousel-next" aria-label="Next">❯</button>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <button class="lightbox-nav lb-prev" id="lb-prev" aria-label="Previous image">❮</button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+      <button class="lightbox-nav lb-next" id="lb-next" aria-label="Next image">❯</button>
+    </div>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+  </section>
+
+  <section class="restaurant-gallery" id="gallery">
+    <div class="container">
+      <span class="section-tag">Our Space</span>
+      <h2 class="section-title text-center">Inside Our<br/><em>Kitchen & Soul</em></h2>
+      <div class="title-underline center"></div>
+      <div class="rest-grid">
+        <div class="rest-item large reveal-up">
+          <img src="assets/img/restaurantepordentro.jpg" alt="Restaurant interior" loading="lazy" />
+          <div class="rest-overlay"><span>Our Dining Room</span></div>
+        </div>
+        <div class="rest-item reveal-up" style="--delay:0.1s">
+          <img src="assets/img/restaurantepordentro2.jpg" alt="Restaurant interior" loading="lazy" />
+          <div class="rest-overlay"><span>Warm Ambiance</span></div>
+        </div>
+        <div class="rest-item reveal-up" style="--delay:0.2s">
+          <img src="assets/img/restaurantepordentro3.jpg" alt="Restaurant interior" loading="lazy" />
+          <div class="rest-overlay"><span>Come & Enjoy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="videos-cta-section" id="videos-link">
+    <div class="video-cta-bg">
+      <video autoplay muted loop playsinline class="video-cta-bg-video">
+        <source src="assets/img/videorestaurante.mp4" type="video/mp4" />
+      </video>
+      <div class="video-cta-overlay"></div>
+    </div>
+    <div class="container video-cta-content">
+      <span class="section-tag light">Behind the Scenes</span>
+      <h2 class="section-title light">See the Magic<br/><em>in Our Kitchen</em></h2>
+      <p class="video-cta-desc">Watch how we craft our authentic dishes with love and tradition.</p>
+      <a href="videos.html" class="btn-hero-secondary btn-videos-cta">Watch Our Videos <span>▶</span></a>
+    </div>
+  </section>
+
+  <section class="menutech-gallery-section" id="media-gallery">
+    <div class="container">
+      <span class="section-tag">Photo Gallery</span>
+      <h2 class="section-title text-center">Our<br/><em>Gallery</em></h2>
+      <div class="title-underline center"></div>
+      <menutech-gallery domain="lascatrinasmexicankitchen.com"></menutech-gallery>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="section-tag">Find Us</span>
+      <h2 class="section-title text-center">Visit<br/><em>Las Catrinas</em></h2>
+      <div class="title-underline center"></div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>182 Village Center Drive<br/>Lusby, MD 20657</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:2405874228">240-587-4228</a></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Monday – Saturday: 11am – 9pm<br/>Sunday: 12pm – 9pm</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <h4>Follow Us</h4>
+            <div class="socials">
+              <a href="https://www.facebook.com/lascatrinasmexicankitchen" target="_blank" class="social-btn facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/lascatrinas_mexicankitchen/" target="_blank" class="social-btn instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+          <div class="order-widget-wrap">
+            <menutech-orders
+              cuid="f799474e-5323-48fb-95d4-d5bfd86ffd8e"
+              ruid="f0807059-ac44-4520-b3c5-4da7660bfafb"
+              color="#ffffff"
+              background="#c0392b"
+              textColor="#ffffff">
+            </menutech-orders>
+            <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal-right">
+          <iframe
+            title="Las Catrinas Mexican Kitchen Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.3!2d-76.4500!3d38.3800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s182+Village+Center+Drive%2C+Lusby%2C+MD+20657!5e0!3m2!1sen!2sus!4v1"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-pin-label">
+            <span>📍</span> 182 Village Center Drive, Lusby, MD
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/LasCatrinasKitchenLOGO.png" alt="Las Catrinas Logo" class="footer-logo" />
+        <div>
+          <p class="footer-name">Las Catrinas Mexican Kitchen</p>
+          <p class="footer-address">182 Village Center Drive, Lusby, MD 20657</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Restaurant</a>
+        <a href="videos.html">Videos</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/lascatrinasmexicankitchen" target="_blank" aria-label="Facebook" class="footer-social-btn">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/lascatrinas_mexicankitchen/" target="_blank" aria-label="Instagram" class="footer-social-btn">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Las Catrinas Mexican Kitchen. All rights reserved.</p>
+      <a href="https://menutech.xyz" target="_blank" class="menutech-credit">
+        <img src="assets/img/menutechlogo.png" alt="Powered by Menutech" class="menutech-logo" />
+        <span>Powered by Menutech</span>
+      </a>
+    </div>
+  </footer>
+<script>
+const promoOpen = document.getElementById("promoOpen");
+const promoModal = document.getElementById("promoModal");
+const closePromo = document.getElementById("closePromo");
+
+promoOpen.addEventListener("click", () => {
+  promoModal.classList.add("active");
+});
+
+closePromo.addEventListener("click", () => {
+  promoModal.classList.remove("active");
+});
+
+promoModal.addEventListener("click", (e) => {
+  if(e.target === promoModal){
+    promoModal.classList.remove("active");
+  }
+});
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
